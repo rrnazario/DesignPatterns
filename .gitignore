@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/src/Behavior/Strategy/DesignPatterns.Strategy/DesignPatterns.Strategy/obj
+/src/Behavior/Strategy/DesignPatterns.Strategy/DesignPatterns.Strategy/bin/Debug/netcoreapp3.1
+/src/Behavior/Strategy/DesignPatterns.Strategy/.vs/DesignPatterns.Strategy/v16
