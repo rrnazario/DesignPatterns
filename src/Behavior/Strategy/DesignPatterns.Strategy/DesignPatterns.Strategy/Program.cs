@@ -12,6 +12,7 @@ namespace DesignPatterns.Strategy
             Console.WriteLine("==== STRATEGY ====");
             
             var context = new Context();
+            
             var strategies = new IStrategy[]
             {
                 new StrategyDefault(),
@@ -20,7 +21,7 @@ namespace DesignPatterns.Strategy
 
             foreach (var strategy in strategies)
             {                
-                context.SetStrategy(strategy);
+                context.SetStrategy(strategy); //With different implementations when will be reasonable, you can change between them.
                 context.ShowSetValues();
             }
         }
