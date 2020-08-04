@@ -4,7 +4,12 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace DesignPatterns.Composition.Model
-{    
+{
+    /// <summary>
+    /// Showing how composition are made. To add more attacks, insert an item on "CharacterEnums.TypeAttack",
+    /// add a property to check if the instance is able to perform the new attack and add another property
+    /// to return the new attack damage.
+    /// </summary>
     public class Character
     {
         private Dictionary<CharacterEnums.TypeAttack, int> Attacks { get; set; }
@@ -28,7 +33,7 @@ namespace DesignPatterns.Composition.Model
         {
             get
             {
-                if (!CanPunch)
+                if (!CanKick)
                     throw new NotSupportedException("This attack is not available");
 
                 return Attacks[CharacterEnums.TypeAttack.Kick];
@@ -67,5 +72,5 @@ namespace DesignPatterns.Composition.Model
             else 
                 Attacks[attack] = damage;
         }
-    }
+    }    
 }

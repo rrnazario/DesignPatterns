@@ -11,3 +11,4 @@
 /src/Behavior/Composition/DesignPatterns.Composition/DesignPatterns.Composition.Test/bin/Debug/netcoreapp3.1
 /src/Behavior/Composition/DesignPatterns.Composition/DesignPatterns.Composition.Test/obj
 /src/Behavior/Strategy/DesignPatterns.Strategy/.vs/DesignPatterns.Strategy/DesignTimeBuild
+*.v2

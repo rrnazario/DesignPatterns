@@ -7,7 +7,7 @@ namespace DesignPatterns.Composition.Test
     public class GeneralTests
     {
         [TestMethod]
-        public void CreateSeveralCharacters()
+        public void Create_Characters()
         {
             var horse = new Character();
             horse.AddAttack(Enums.CharacterEnums.TypeAttack.Kick, 10);
