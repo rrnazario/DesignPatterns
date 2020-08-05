@@ -1,7 +1,6 @@
 ﻿using DesignPatterns.Composition.Enums;
 using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace DesignPatterns.Composition.Model
 {
@@ -62,11 +61,17 @@ namespace DesignPatterns.Composition.Model
 
         public Character(Dictionary<CharacterEnums.TypeAttack, int> attacks)
         {
+            if (attacks == null)
+                throw new ArgumentException("Attacks must not be null.");
+
             Attacks = attacks;
         }
 
         public void AddAttack(CharacterEnums.TypeAttack attack, int damage)
         {
+            if (damage <= 0)
+                throw new ArgumentOutOfRangeException("Damage must be bigger than zero.");
+            
             if (!Attacks.ContainsKey(attack))
                 Attacks.Add(attack, damage);
             else 
